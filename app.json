@@ -1,7 +1,7 @@
 {
   "name": "API.AI Simple Webservice",
   "description": "API.AI Webhook",
-  "repository": "",
+  "repository": "https://github.com/mediamicx/apiai-webservice",
   "logo": "http://xvir.github.io/img/apiai.png",
   "keywords": ["api.ai", "natural language"]
 }
