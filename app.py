@@ -31,14 +31,17 @@ def makeWebhookResult(req):
     if req.get("result").get("action") != "report.bug":
         return {}
     result = req.get("result")
+    bug = req.get("resolvedQuery")
     parameters = result.get("parameters")
+    browser = parameters.get("Browser")
+    os = parameters.get("OS")
     link = parameters.get("Link")
 
     # cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
 
     # speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
 
-    speech = "Link zum Problem: " + link
+    speech = "Vielen Dank. Ich habe folgendes Verstanden. Das Problem: " + bug + ". Das Problem kann man auf/in  " + os + " im " + browser + " nachvollziehen. Link oder Screenshot: " + link
 
     print("Response:")
     print(speech)
