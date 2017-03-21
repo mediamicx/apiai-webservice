@@ -31,10 +31,10 @@ def makeWebhookResult(req):
     if req.get("result").get("action") != "report.bug":
         return {}
     result = req.get("result")
-    bug = req.get("resolvedQuery")
+    # bug = req.get("resolvedQuery")
     parameters = result.get("parameters")
-    browser = parameters.get("Browser")
-    os = parameters.get("OS")
+    # browser = parameters.get("Browser")
+    # os = parameters.get("OS")
     link = parameters.get("Link")
 
     # cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
