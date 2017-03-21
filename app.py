@@ -41,7 +41,8 @@ def makeWebhookResult(req):
 
     # speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
 
-    speech = "Vielen Dank. Ich habe folgendes Verstanden. Das Problem: " + bug + ". Das Problem kann man auf/in  " + os + " im " + browser + " nachvollziehen. Link oder Screenshot: " + link
+    # speech = "Vielen Dank. Ich habe folgendes Verstanden. Das Problem: " + bug + ". Das Problem kann man auf/in  " + os + " im " + browser + " nachvollziehen. Link oder Screenshot: " + link
+    speech = "Danke." + link
 
     print("Response:")
     print(speech)
